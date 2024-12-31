@@ -20,7 +20,7 @@ Ofrece una interfaz gráfica fácil de comprender, en la esquina superior derech
 
 ## Instalación 
 >[!NOTE]
->Puedes saltar los últimos 3 pasos si es que piensas usar el ejecutable
+>Puedes saltar los últimos 3 pasos si es que piensas usar el ejecutable incluido en el repositorio
     Sigue estos pasos si es que quieres tener el proyecto en tu máquina local : 
 1. **Clona este repositorio**
 ```bash
@@ -29,6 +29,9 @@ Ofrece una interfaz gráfica fácil de comprender, en la esquina superior derech
 ```
 
 2. **Crea el entorno virtual**
+>[!NOTE]
+>Si tiene instalado Make, puede ejecutar el comando `make environ` y saltear el paso 4
+>Por el contario siga los siguientes pasos :
 ```bash
 python -m venv venv
 ```
@@ -46,21 +49,29 @@ pip install -r requirements.txt
 
 ## Uso 
 **Si es desde el Código fuente**
+>[!NOTE]
+>Si tiene Make instalado, puede ejecutar el comando `make run`
+>Por el contario ejecute el siguiente comando :
 ```bash
 python main.py
 ```
 
 **Si deseas usar el ejecutable**
->Dirigete a la dirección dentro de la carpeta principal "./build/exe.win-amd64-3.11" 
+>Dirigete a la dirección dentro de la carpeta principal `./build/exe.win-amd64-3.11`
 >Haz doble click sobre el archivo "ColorPicker.exe"
 
 
 ## Compilación 
 >[!IMPORTANT]
->Asegurese de que la libreria cx_Freeze esté insatalada y que el entorno virutal está activado
+>Si no está usando Make, asegurese de que la libreria cx_Freeze esté insatalada y que el entorno virutal está activado
 
-**Ejecute el siguiente comando en la terminal**
+>[!NOTE]
+>Si tiene instalado Make, puede usar el comando `make compile`
+
+1. **Ejecute el siguiente comando en la terminal**
 ```bash
 python setup.py build
 ```
+
+2. **Ejecute el archivo .exe**
 El archivo ejecutable se encontrará en la dirección `./build/exe.win-amd64-3.11`
