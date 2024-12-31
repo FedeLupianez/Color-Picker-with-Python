@@ -20,7 +20,7 @@ Ofrece una interfaz gráfica fácil de comprender, en la esquina superior derech
 
 ## Instalación 
 >[!NOTE]
->Puedes saltar el paso 2 si es que piensas usar el ejecutable
+>Puedes saltar los últimos 3 pasos si es que piensas usar el ejecutable
     Sigue estos pasos si es que quieres tener el proyecto en tu máquina local : 
 1. **Clona este repositorio**
 ```bash
@@ -28,9 +28,19 @@ Ofrece una interfaz gráfica fácil de comprender, en la esquina superior derech
     cd color-picker-with-python
 ```
 
-2. **Activa el entorno virtual**
+2. **Crea el entorno virtual**
+```bash
+python -m venv venv
+```
+
+3. **Activa el entorno virtual**
 ```bash
 ./venv/scripts/activate
+```
+
+4. **Instala las dependencias**
+```bash
+pip install -r requirements.txt
 ```
 
 
@@ -53,4 +63,4 @@ python main.py
 ```bash
 python setup.py build
 ```
-El archivoejecutable se encontrará en la dirección `./build/exe.win-amd64-3.11`
+El archivo ejecutable se encontrará en la dirección `./build/exe.win-amd64-3.11`
